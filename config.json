@@ -1,0 +1,27 @@
+{
+  "configuration" : [
+    {
+      "telegramToken" : "your-telegram-token",
+      "telegramChatId" : "telegram-chat-id",
+      "scriptDir" : "/scripts.pagefai/jbot"
+    }
+  ],
+  "tasks" : [
+    { 
+      "id" : 1,
+      "title": "Check Internet",
+      "status": "enabled",
+      "notification": "enabled",
+      "execute" : "checkInternet",
+      "schedule" : "daily"
+    },
+    { 
+      "id" : 2,
+      "title": "Check Disk ",
+      "status": "enabled",
+      "notification": "enabled",
+      "execute" : "checkDisk",
+      "schedule" : "daily"
+    }
+  ]
+}
